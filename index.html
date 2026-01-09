@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Para Mi Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado con controles de música -->
+        <header class="header">
+            <div class="music-controls">
+                <button id="musicToggle" class="music-btn">
+                    <i class="fas fa-play"></i>
+                    <span>Música</span>
+                </button>
+                <div class="song-info">
+                    <i class="fas fa-music"></i>
+                    <span>Boy In Luv - BTS</span>
+                </div>
+            </div>
+            <div class="date-info">
+                <p id="firstVisitDate">Cargando fecha especial...</p>
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <!-- Sección 1: Introducción -->
+            <section class="section intro">
+                <div class="heart-container">
+                    <div class="heart"></div>
+                </div>
+                <h1 class="title animate-text">Para Mi Amor</h1>
+                <p class="subtitle animate-text">Una carta especial que escribí solo para ti</p>
+            </section>
+
+            <!-- Sección 2: Mensaje romántico -->
+            <section class="section message">
+                <div class="message-content">
+                    <h2 class="section-title animate-text">Mi Querida...</h2>
+                    <p class="message-text animate-text">Desde que llegaste a mi vida, todo tiene más color, más sentido y más amor. Cada día a tu lado es un regalo que atesoro profundamente en mi corazón.</p>
+                    <p class="message-text animate-text">Recuerdo la primera vez que te vi, cómo tu sonrisa iluminó la habitación y cómo desde ese momento supe que quería conocerte más. Ahora, cada momento contigo es un capítulo de la historia más hermosa que he vivido.</p>
+                    <p class="message-text animate-text">Eres mi paz en los días tormentosos, mi alegría en los momentos simples, mi inspiración cuando más lo necesito. Contigo he aprendido el verdadero significado del amor incondicional.</p>
+                </div>
+            </section>
+
+            <!-- Sección 3: Foto con animación -->
+            <section class="section photo-section">
+                <div class="photo-container">
+                    <div class="photo-frame">
+                        <img src="images/foto-pareja.jpg" alt="Nuestra foto" class="photo animate-photo" id="ourPhoto">
+                        <div class="photo-overlay">
+                            <p class="photo-caption">Nuestro momento especial</p>
+                        </div>
+                    </div>
+                    <div class="photo-message">
+                        <p class="animate-text">Esta foto captura uno de mis momentos favoritos juntos. Cada vez que la veo, recuerdo lo afortunado que soy de tenerte en mi vida.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 4: Promesas -->
+            <section class="section promises">
+                <h2 class="section-title animate-text">Mis Promesas Para Ti</h2>
+                <div class="promises-list">
+                    <div class="promise-item animate-text">
+                        <i class="fas fa-heart promise-icon"></i>
+                        <p>Prometo amarte cada día más, incluso en los momentos difíciles.</p>
+                    </div>
+                    <div class="promise-item animate-text">
+                        <i class="fas fa-star promise-icon"></i>
+                        <p>Prometo hacerte sentir especial y valorada todos los días.</p>
+                    </div>
+                    <div class="promise-item animate-text">
+                        <i class="fas fa-hand-holding-heart promise-icon"></i>
+                        <p>Prometo apoyarte en tus sueños y estar a tu lado siempre.</p>
+                    </div>
+                    <div class="promise-item animate-text">
+                        <i class="fas fa-laugh-beam promise-icon"></i>
+                        <p>Prometo llenar tu vida de risas, alegría y momentos inolvidables.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 5: Cierre -->
+            <section class="section closing">
+                <div class="closing-content">
+                    <h2 class="section-title animate-text">Para Siempre</h2>
+                    <p class="closing-text animate-text">No importa lo que el futuro nos depare, sé que quiero afrontarlo a tu lado. Eres mi hogar, mi refugio y mi mayor felicidad.</p>
+                    <p class="closing-text animate-text">Te amo más de lo que las palabras pueden expresar, más de lo que el tiempo puede medir, y más de lo que el universo puede contener.</p>
+                    <div class="signature animate-text">
+                        <p>Con todo mi amor,</p>
+                        <h3 class="signature-name">Tu Novio</h3>
+                        <div class="hearts">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="footer">
+            <p>Esta carta fue creada con todo mi amor para ti. <i class="fas fa-heart footer-heart"></i></p>
+            <p class="footer-date" id="currentDate"></p>
+        </footer>
+    </div>
+
+    <!-- Audio para la música (oculto) -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/boy-in-luv.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
